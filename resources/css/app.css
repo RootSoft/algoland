@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply cursor-pointer text-white purple-to-orange-horizontal rounded-full px-3 py-2 uppercase text-sm font-bold
+    }
+
+    .input {
+        @apply px-4 py-3 leading-5 border rounded-md focus:outline-none focus:ring-primary-dark focus:border-primary
+    }
+
+}
+
+@layer utilities {
+    .purple-to-orange-horizontal {
+        background: #b72375;
+        background: -webkit-gradient(linear,left top,right top,color-stop(3%,#b72375),color-stop(97%,#f37e33));
+        background: linear-gradient(90deg,#b72375 3%,#f37e33 97%)
+    }
+}
+
+@variants hover {
+    .purple-to-orange-horizontal:hover {
+        background: #b72375;
+    }
+}
+
+[x-cloak] {
+    display: none !important;
+}

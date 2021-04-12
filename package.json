@@ -1,0 +1,30 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.5",
+        "axios": "^0.21",
+        "browser-sync": "^2.26.14",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.2.8",
+        "tailwindcss": "^2.0.4"
+    },
+    "dependencies": {
+        "@kingshott/iodine": "^3.1.0",
+        "@randlabs/myalgo-connect": "^1.0.1",
+        "@ryangjchandler/spruce": "^2.6.3",
+        "alpinejs": "^2.8.2",
+        "byte-base64": "^1.1.0",
+        "form-data": "^4.0.0"
+    }
+}
