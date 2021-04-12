@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbd0513d62487ba4f6a76acdc63a0384",
+    "content-hash": "bb81e91bff4572ac9ccd453c27c84ab1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3040,10 +3040,16 @@
         {
             "name": "rootsoft/algorand-php",
             "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "/Users/tomas/RootSoft/Projecten/Algorand/algorand-php",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RootSoft/algorand-php.git",
                 "reference": "a2fab49a746bb6dad181a2ae7884e944a8404334"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RootSoft/algorand-php/zipball/a2fab49a746bb6dad181a2ae7884e944a8404334",
+                "reference": "a2fab49a746bb6dad181a2ae7884e944a8404334",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3063,6 +3069,7 @@
                 "phpunit/phpunit": "^9.5",
                 "spatie/ray": "^1.10"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3079,25 +3086,7 @@
                     "Rootsoft\\Algorand\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Rootsoft\\Algorand\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "psalm": [
-                    "vendor/bin/psalm"
-                ],
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ],
-                "format": [
-                    "vendor/bin/php-cs-fixer fix --allow-risky=yes"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3116,9 +3105,11 @@
                 "blockchain",
                 "rootsoft"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/RootSoft/algorand-php/issues",
+                "source": "https://github.com/RootSoft/algorand-php/tree/master"
+            },
+            "time": "2021-04-10T11:48:21+00:00"
         },
         {
             "name": "rootsoft/laravel-ipfs",
@@ -3374,16 +3365,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "9.5.3",
+            "version": "9.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "ebbc996db457adecc778db6030d22ef72b495d59"
+                "reference": "0f794efc21a01ed39e372433282f6683a06d9afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/ebbc996db457adecc778db6030d22ef72b495d59",
-                "reference": "ebbc996db457adecc778db6030d22ef72b495d59",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/0f794efc21a01ed39e372433282f6683a06d9afa",
+                "reference": "0f794efc21a01ed39e372433282f6683a06d9afa",
                 "shasum": ""
             },
             "require": {
@@ -3462,7 +3453,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/9.5.3"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/9.5.4"
             },
             "funding": [
                 {
@@ -3474,27 +3465,27 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-08T08:27:49+00:00"
+            "time": "2021-04-12T12:00:39+00:00"
         },
         {
             "name": "spatie/temporary-directory",
-            "version": "2.0.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/temporary-directory.git",
-                "reference": "06fe0f10d068fdf145c9b2235030e568c913bb61"
+                "reference": "f517729b3793bca58f847c5fd383ec16f03ffec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/06fe0f10d068fdf145c9b2235030e568c913bb61",
-                "reference": "06fe0f10d068fdf145c9b2235030e568c913bb61",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/f517729b3793bca58f847c5fd383ec16f03ffec6",
+                "reference": "f517729b3793bca58f847c5fd383ec16f03ffec6",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0"
+                "php": "^7.2|^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "^8.0|^9.0"
             },
             "type": "library",
             "autoload": {
@@ -3523,19 +3514,9 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/temporary-directory/issues",
-                "source": "https://github.com/spatie/temporary-directory/tree/2.0.0"
+                "source": "https://github.com/spatie/temporary-directory/tree/1.3.0"
             },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-03-30T19:46:13+00:00"
+            "time": "2020-11-09T15:54:21+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
