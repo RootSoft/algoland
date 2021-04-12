@@ -15,7 +15,6 @@ services:
             LARAVEL_SAIL: 1
         volumes:
             - '.:/var/www/html'
-            - '/Users/tomas/RootSoft/Projecten/Algorand/algorand-php:/Users/tomas/RootSoft/Projecten/Algorand/algorand-php'
         networks:
             - sail
         depends_on:

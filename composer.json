@@ -65,11 +65,5 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    },
-    "repositories": {
-        "local": {
-            "type": "path",
-            "url": "/Users/tomas/RootSoft/Projecten/Algorand/algorand-php"
-        }
     }
 }
