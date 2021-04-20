@@ -1,10 +1,3 @@
-This solution guides you in building a decentralized web application using the PHP framework for web artisans: [Laravel](https://laravel.com).
-We will be using RootSoft’s [Algorand-php](https://github.com/RootSoft/algorand-php) package to create our non-fungible tokens on the Algorand blockchain and use the [laravel-ipfs](https://github.com/RootSoft/laravel-ipfs) package to store our content on a distributed file system.
-
-The solution is built using the [TALL stack](https://tallstack.dev/) but can be applied to any front-end SPA framework like Vue, React or Svelte using Inertia.js, while using Laravel as our server-side framework. This solution shows you a couple of features of the Algorand-php sdk, how to integrate [AlgoSigner](../../articles/connecting-webapps-using-algosigner/) and [MyAlgo Connect](../../articles/introducing-myalgo-connect/) to sign our transactions and some general best practices regarding storing data off-chain.
-
-![Create collectible](https://i.imgur.com/068JQ8C.png)
-
 ## Introduction
 Laravel is a web application framework with an expressive, elegant syntax designed to make developing web apps easier and faster through built-in features. Laravel strives to provide an amazing developer experience, while providing powerful features such as thorough dependency injection, an expressive database abstraction layer, queues and scheduled jobs, unit and integration testing, and more.
 
@@ -18,6 +11,8 @@ In our solution, we will be using the TALL stack which is a full-stack developme
 Note that this guide also applies to anyone who wishes to uses another front-end framework like [Vue](https://vuejs.org/) & [React](https://reactjs.org/) while using any PHP framework as your back-end. [Inertia.js](https://inertiajs.com) allows you to create fully client-side rendered, single-page apps, without much of the complexity that comes with modern SPAs. It does this by leveraging existing server-side frameworks, like Laravel and Rails.
 
 Before we get started, I highly recommend you to read [this excellent article](https://developer.algorand.org/articles/building-nfts-on-algorand/) by Jason Weathersby on the different approaches NFTs can be implemented on the Algorand blockchain. We will be focusing on the primary method to build and deploy an NFT which is by using the ASA (Algorand Standard Assets), a layer 1 primitive that allows an NFT to be created in seconds.
+
+![Create collectible](https://i.imgur.com/068JQ8C.png)
 
 ## Requirements
 1. PHPStorm (or another PHP-supported IDE)
