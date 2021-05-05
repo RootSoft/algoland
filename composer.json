@@ -18,8 +18,7 @@
         "livewire/livewire": "^2.4",
         "myclabs/php-enum": "^1.8",
         "rootsoft/algorand-php": "dev-master",
-        "rootsoft/laravel-ipfs": "dev-master",
-        "spatie/laravel-medialibrary": "^9.0.0"
+        "rootsoft/laravel-ipfs": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.9",
